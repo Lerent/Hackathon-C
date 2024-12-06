@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main () {
+int main () 
+{
 	int list[100];
 	int size = 0;
 	int choice;
@@ -90,16 +91,16 @@ int main () {
 				break;
 			} 
 			case 6: {
-				int ValueToDelete;
+				int Delete;
                 printf("Nhap gia tri phan tu can xoa ");
-                scanf("%d", &ValueToDelete);
+                scanf("%d", &Delete);
                 for (int i = 0; i < size -1; i++) {
-                    if (list[i] == ValueToDelete) {
+                    if (list[i] == Delete) {
                         for(int j = i; j < size -1; j++) {
                         	list[j] = list[j + 1];
 						} 
 						size--;
-						printf("Phan tu %d da duoc xoa\n", ValueToDelete);
+						printf("Phan tu %d da duoc xoa\n", Delete);
 						break; 
                     }
                 }
